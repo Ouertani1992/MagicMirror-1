@@ -13,7 +13,7 @@ Module.register("weatherforecast", {
 		lon: false,
 		appid: "",
 		units: config.units,
-		maxNumberOfDays: 7,
+		maxNumberOfDays: 10,
 		showRainAmount: false,
 		updateInterval: 10 * 60 * 1000, // every 10 minutes
 		animationSpeed: 1000,

@@ -2,7 +2,6 @@ html {
   cursor: none;
   overflow: hidden;
   background: #000;
-  user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -61,8 +60,8 @@ body {
 
 .xlarge {
   font-size: 75px;
-  line-height: 75px;
-  letter-spacing: -3px;
+  line-height: 25px;
+  letter-spacing: 1px;
 }
 
 .thin {
@@ -181,8 +180,12 @@ sup {
   transform: translateX(-50%);
 }
 
-.region.top.right,
-.region.top.left,
+.region.top.right {
+  top: 100%;
+}
+.region.top.left {
+  top: 100%;
+}
 .region.top.center {
   top: 100%;
 }
@@ -227,10 +230,16 @@ sup {
 
 .region.left {
   text-align: left;
+  font-size: 120%;
 }
 
 .region table {
   width: 100%;
   border-spacing: 0;
   border-collapse: separate;
+  font-size: 40%;
+}
+
+.compliments .xlarge {
+  font-size: 30px;
 }

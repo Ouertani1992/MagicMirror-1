@@ -9,7 +9,7 @@
 }
 
 .weatherforecast .min-temp {
-  padding-left: 20px;
+  padding-left: 30px;
   padding-right: 0;
 }
 
@@ -24,4 +24,75 @@
 
 .weatherforecast tr.colored .max-temp {
   color: #ff8e99;
+}
+
+body {
+}
+
+.brightb {
+  color: #55acee;
+}
+
+.weatherforecast .wi-sunrise {
+  color: #ffd700;
+}
+.weatherforecast .wi-sunset {
+  color: #ffa500;
+}
+.weatherforecast .wi-day-sunny {
+  color: #ffff00;
+}
+.weatherforecast .wi-night-showers {
+  color: #55acee;
+}
+.weatherforecast .wi-degrees {
+  color: #415;
+}
+.weatherforecast .wi-rain {
+  color: #55acee;
+}
+.weatherforecast .wi-showers {
+  color: #55acee;
+}
+.weatherforecast .wi-night-showers {
+  color: #55acee;
+}
+.weatherforecast .wi-night-alt-cloudy-windy {
+  color: #aaa;
+}
+.weatherforecast .wi-night-cloudy {
+  color: #aaa;
+}
+.weatherforecast .wi-cloudy {
+  color: #ffa500;
+}
+.weatherforecast .wi-day-cloudy {
+  color: #aaa;
+}
+.weatherforecast .wi-cloudy {
+  color: #aaa;
+}
+.weatherforecast .wi-cloudy-windy {
+  color: #aaa;
+}
+.weatherforecast .wi-showers {
+  color: #55acee;
+}
+.weatherforecast .wi-thunderstorm {
+  color: #ff00ff;
+}
+.weatherforecast .wi-snow {
+  color: #fff;
+}
+.weatherforecast .wi-fog {
+  color: #999;
+}
+.weatherforecast .wi-night-clear {
+  color: #fff;
+}
+.weatherforecast .wi-night-rain {
+  color: #55acee;
+}
+.weatherforecast .wi-night-thunderstorm {
+  color: #ff00ff;
 }
