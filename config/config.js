@@ -128,21 +128,46 @@ var config = {
 				locationID: "3247434", //Location ID from http://openweathermap.org/help/city_list.txt
 				appid: "c161aa9bce5a83a2eb64f754db5fb9ea",  //openweathermap.org API key
 	      			colorIcon: true,
-	      			updateInterval: 10*60*1000, // Hier ist lösung damit Modul nicht blockiert
+	      			updateInterval: 60000, // Hier ist lösung damit Modul nicht blockiert
+	      			showHumidity: true,
+	      			initialLoadDelay: 0,
+	      			lat: 51.1010078,
+		        	lng: 6.4525687,
 			}
 			},
 			{
 			module: "weatherforecast",
 			position: "top_right",
 			header: "Weather Forecast",
+			locationID: "3247434",
 			config: {
 				location: "Jüchen",
 				locationID: "3247434", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
 				appid: "c161aa9bce5a83a2eb64f754db5fb9ea",
 				colored: true,
 				showRainAmount: true,
-				updateInterval: 6000,
+				updateInterval: 120000,
+				initialLoadDelay: 2000,
+				lat: 51.1010078,
+		        lng: 6.4525687,
 			}
+			},
+			{
+		    module: "MMM-Fuel",
+		    position: "top_right",
+		    
+		    config: {
+		        api_key: "295ac1e6-9cb7-a85e-844a-d4abc5c34922",
+		        provider: "tankerkoenig",
+		        lat: 51.1010078,
+		        lng: 6.4525687,
+		        types: ["lpg", "e5"],
+		        updateInterval: 120000,
+		        rotateInterval: 90000,
+		        radius: "4",
+		        max: "3"
+		        // all your config options, which are different than their default values
+		    }
 			},
 			{
 			module: "newsfeed",
