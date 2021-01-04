@@ -10,8 +10,7 @@
 
 var config = {
 
-/*
-ccc
+
 	address: "localhost", 	// Address to listen on, can be:
 							// - "localhost", "127.0.0.1", "::1" to listen on loopback interface
 							// - another specific IPv4/6 to listen on a specific interface
@@ -22,7 +21,7 @@ ccc
 					// you must set the sub path here. basePath must end with a /
 	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"], 	// Set [] to allow all IP addresses
 
-*/
+/*
 
 	address: "192.168.2.111", 
 	port: 8080,
@@ -31,7 +30,7 @@ ccc
 	
 	ipWhitelist: ["192.168.2.108", "::ffff:192.168.2.108", "::1"],
 
-
+*/
 	
 
 	useHttps: false, 		// Support HTTPS or not, default "false" will use HTTP
@@ -123,14 +122,13 @@ ccc
 			{
 			module: "MMM-OpenmapWeather",
 			position: "top_right",	// This can be any of the regions.
-			//header: "Jüchen, Neuss",
-										// Best results in left or right regions.
 			config: {
 				// See 'Configuration options' for more information.
 				location: "Jüchen, Neuss",
 				locationID: "3247434", //Location ID from http://openweathermap.org/help/city_list.txt
 				appid: "c161aa9bce5a83a2eb64f754db5fb9ea",  //openweathermap.org API key
-	      			colorIcon: true
+	      			colorIcon: true,
+	      			updateInterval: 10*60*1000, // Hier ist lösung damit Modul nicht blockiert
 			}
 			},
 			{
@@ -143,7 +141,7 @@ ccc
 				appid: "c161aa9bce5a83a2eb64f754db5fb9ea",
 				colored: true,
 				showRainAmount: true,
-				updateInterval: 600000,
+				updateInterval: 6000,
 			}
 			},
 			{
@@ -161,17 +159,17 @@ ccc
 				broadcastNewsFeeds: true,
 				broadcastNewsUpdates: true
 			}
-			} /*,
+			} ,
 			{
 			module: 'MMM-Globe',
 			position: 'middle_center',
 			config: {
 				style: 'europeDiscNat',
-				imageSize: 400,
+				imageSize: 300,
 				ownImagePath:'',
 				updateInterval: 10*60*1000
 			}
-			}*/,
+			},
 			
 
 			 

@@ -213,7 +213,7 @@ sup {
 .region.middle.center {
   width: 100%;
   text-align: center;
-  transform: translateY(-50%);
+  transform: translateY(+50%); // middle.center Posozionieren gene y axe
 }
 
 .region.upper.third {
@@ -234,7 +234,7 @@ sup {
 }
 
 .region table {
-  width: 100%;
+  width: 80%;
   border-spacing: 0;
   border-collapse: separate;
   font-size: 40%;
