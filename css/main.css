@@ -182,9 +182,13 @@ sup {
 
 .region.top.right {
   top: 100%;
+  width: 350px;
+  font-size: 40px;
 }
 .region.top.left {
   top: 100%;
+  width: 350px;
+  font-size: 40px;
 }
 .region.top.center {
   top: 100%;
@@ -213,7 +217,7 @@ sup {
 .region.middle.center {
   width: 100%;
   text-align: center;
-  transform: translateY(+50%); // middle.center Posozionieren gene y axe
+  transform: translateY(+120%); // middle.center Posozionieren gene y axe
 }
 
 .region.upper.third {
@@ -230,14 +234,16 @@ sup {
 
 .region.left {
   text-align: left;
-  font-size: 120%;
+}
+
+.region.right {
+  text-align: left;
 }
 
 .region table {
-  width: 80%;
+  width: 100%;
   border-spacing: 0;
   border-collapse: separate;
-  font-size: 40%;
 }
 
 .compliments .xlarge {

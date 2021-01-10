@@ -60,6 +60,15 @@ var config = {
 			position: "top_left"
 		},
 		{
+			module: 'calendar_monthly',
+			position: 'top_left',
+			config: {
+					// The config property is optional
+					// Without a config, a default month view is shown
+					// Please see the 'Configuration Options' section for more information
+		}
+		},
+		{
 			module: "calendar",
 			header: "Sassou Kalender",
 			position: "top_left",
@@ -145,11 +154,14 @@ var config = {
 				locationID: "3247434", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
 				appid: "c161aa9bce5a83a2eb64f754db5fb9ea",
 				colored: true,
+				maxNumberOfDays: 10,
+				calendarClass: "calendar",
 				showRainAmount: true,
 				updateInterval: 120000,
 				initialLoadDelay: 2000,
 				lat: 51.1010078,
 		        lng: 6.4525687,
+		        			
 			}
 			},
 			{
@@ -168,6 +180,19 @@ var config = {
 		        max: "3"
 		        // all your config options, which are different than their default values
 		    }
+			},
+			{
+		  	module: "MMM-COVID19",
+		    position: "top_right",
+		    config: {
+		      updateInterval: 300,
+		      worldStats: true,
+		      delta: true,
+		      lastUpdateInfo: true,
+		      countries: ["Argentina", "China", "Italy", "Spain" ],
+				headerRowClass: "small",
+		      rapidapiKey : "bf959312bfmsh55fca12931cfa70p1b2120jsna0d23e634c96" // this is an example, do not try to use it for real
+    		}
 			},
 			{
 			module: "newsfeed",
@@ -195,7 +220,53 @@ var config = {
 				updateInterval: 10*60*1000
 			}
 			},
-			
+			{
+		    module: "MMM-GoogleAssistant",
+		    position: "bottom_bar",
+		    config: {
+		        maxWidth: "100%",
+		        header: "",
+		    publishKey: 'pub-c-408135b8-9f85-4405-af4d-8c0fcd3723b5',
+		    subscribeKey: 'sub-c-58f15218-51ad-11eb-9d3f-7e8713e36938',
+		    updateDelay: 500
+		    }
+			},
+
+			/*{
+	        module: 'MMM-pages',// seite numme 2
+	        config: {
+	                modules:
+	                    [[ "weatherforecast", "newsfeed"],
+	                     [ "calendar", "compliments" ]],
+	                fixed: ["MMM-Globe", "currentweather", "MMM-page-indicator"],
+	                hiddenPages: {
+	                    "screenSaver": [ "MMM-Globe", "MMM-SomeBackgroundImageModule" ],
+	                    "admin": [ "MMM-ShowMeSystemStatsModule", "MMM-AnOnScreenMenuModule" ],
+	                    PAGE_NUMBER_IS : 1,
+            },
+			}
+			},////////////// Seiten Assistant
+			{
+	        module: 'MMM-pages',// seite numme 2
+	        config: {
+	                modules:
+	                    [[ "weatherforecast", "newsfeed"],
+	                     [ "calendar", "compliments" ]],
+	                fixed: ["clock", "currentweather", "MMM-page-indicator"],
+	                hiddenPages: {
+	                    "screenSaver": [ "clock", "MMM-SomeBackgroundImageModule" ],
+	                    "admin": [ "MMM-ShowMeSystemStatsModule", "MMM-AnOnScreenMenuModule" ],
+	                    PAGE_NUMBER_IS: 2,
+            },
+			}
+    		},
+    		{
+	        module: 'MMM-page-indicator',
+	        position: 'bottom_bar',
+	        config: {
+	            pages: 2,
+	        }
+    		},*/
 
 			 
 
